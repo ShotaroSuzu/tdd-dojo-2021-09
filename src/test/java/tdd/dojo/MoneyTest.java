@@ -10,7 +10,9 @@ public class MoneyTest {
 	public void testMultiplication() {
 		//$5 * 2 = $10というテスト書く
 		Doller five = new Doller(5);
-		five.times(2);
-		assertThat(five.amount, is(10));
+		Doller product = five.times(2);
+		assertThat(product.amount, is(10));
+		product = five.times(3);
+		assertThat(product.amount, is(15));
 	}
 }
