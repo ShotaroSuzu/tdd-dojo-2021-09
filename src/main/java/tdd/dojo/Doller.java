@@ -12,4 +12,8 @@ public class Doller {
 		return new Doller(amount * multiplier);
 	}
 
+	public boolean equals(Doller object) {
+		Doller doller = (Doller) object;
+		return this.amount == doller.amount;
+	}
 }

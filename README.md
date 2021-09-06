@@ -7,5 +7,8 @@
 - [ ] amount をprivateにしてあげる
 - [x] Dollerが副作用を持っているので解消する
 - [ ] Moneyの丸め処理どうする？
-
+- [x] equalsの実装
+- [ ] hashCode()の実装
+- [ ] nullとの等価性比較
+- [ ] 他のオブジェクトとの等価性比較
 

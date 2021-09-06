@@ -15,4 +15,14 @@ public class MoneyTest {
 		product = five.times(3);
 		assertThat(product.amount, is(15));
 	}
+
+	@Test
+	public void testEquals_sameAmount_true() {
+		assertThat(new Doller(5).equals(new Doller(5)), is(true));
+	}
+	
+	@Test
+	public void testEquals_differentAmount_false() {
+		assertThat(new Doller(5).equals(new Doller(4)), is(false));
+	}
 }
