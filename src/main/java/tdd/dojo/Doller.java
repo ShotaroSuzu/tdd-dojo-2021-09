@@ -2,7 +2,7 @@ package tdd.dojo;
 
 public class Doller {
 
-	public int amount;
+	private int amount;
 
 	public Doller(int amount) {
 		this.amount = amount;
@@ -12,7 +12,7 @@ public class Doller {
 		return new Doller(amount * multiplier);
 	}
 
-	public boolean equals(Doller object) {
+	public boolean equals(Object object) {
 		Doller doller = (Doller) object;
 		return this.amount == doller.amount;
 	}

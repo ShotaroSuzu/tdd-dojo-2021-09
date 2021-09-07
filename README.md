@@ -4,7 +4,7 @@
 ## TODOリスト
 - [ ] $5 + 10CHF = $10(レートが2:1の場合)
 - [x] $5 * 2 = 10$
-- [ ] amount をprivateにしてあげる
+- [x] amount をprivateにしてあげる
 - [x] Dollerが副作用を持っているので解消する
 - [ ] Moneyの丸め処理どうする？
 - [x] equalsの実装
