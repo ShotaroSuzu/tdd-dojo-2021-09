@@ -22,4 +22,11 @@ public class MoneyTest {
 	public void testEquals_differentAmount_false() {
 		assertThat(new Doller(5).equals(new Doller(4)), is(false));
 	}
+	
+	@Test
+	public void testFrancMultiplication() {
+		Franc product = new Franc(5);
+		assertThat(product.times(2), is(new Franc(10)));
+		assertThat(product.times(3), is(new Franc(15)));
+	}
 }
