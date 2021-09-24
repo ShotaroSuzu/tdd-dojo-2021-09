@@ -44,4 +44,10 @@ public class MoneyTest {
 		assertThat(product.times(2), is(Money.franc(10)));
 		assertThat(product.times(3), is(Money.franc(15)));
 	}
+	
+	@Test
+	public void testCurrency() {
+		assertThat(Money.dollar(1).currency(), is("USD"));
+		assertThat(Money.franc(1).currency(), is("CHF"));
+	}
 }
