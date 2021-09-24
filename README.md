@@ -11,4 +11,9 @@
 - [ ] hashCode()の実装
 - [ ] nullとの等価性比較
 - [ ] 他のオブジェクトとの等価性比較
+- [x] 5CHF * 2 = 10 CHF
+- [ ] Doller とFranc の重複
+- [x] equalsの一般化
+- [ ] timesの一般化
+
 

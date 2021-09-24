@@ -14,13 +14,23 @@ public class MoneyTest {
 	}
 
 	@Test
-	public void testEquals_sameAmount_true() {
+	public void testDollerEquals_sameAmount_true() {
 		assertThat(new Doller(5).equals(new Doller(5)), is(true));
 	}
 	
 	@Test
-	public void testEquals_differentAmount_false() {
+	public void testDollerEquals_differentAmount_false() {
 		assertThat(new Doller(5).equals(new Doller(4)), is(false));
+	}
+	
+	@Test
+	public void testFrancEquals_sameAmount_true() {
+		assertThat(new Franc(5).equals(new Franc(5)), is(true));
+	}
+	
+	@Test
+	public void testFrancEquals_differentAmount_false() {
+		assertThat(new Franc(5).equals(new Franc(4)), is(false));
 	}
 	
 	@Test
