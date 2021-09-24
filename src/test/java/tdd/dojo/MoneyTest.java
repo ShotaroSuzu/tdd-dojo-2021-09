@@ -29,6 +29,11 @@ public class MoneyTest {
 	}
 	
 	@Test
+	public void testEquals_differentCurrency() {
+		assertThat(new Doller(5).equals(new Franc(5)), is(false));
+	}
+	
+	@Test
 	public void testFrancEquals_differentAmount_false() {
 		assertThat(new Franc(5).equals(new Franc(4)), is(false));
 	}
