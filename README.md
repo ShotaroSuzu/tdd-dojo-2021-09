@@ -12,9 +12,9 @@
 - [ ] nullとの等価性比較
 - [ ] 他のオブジェクトとの等価性比較
 - [x] 5CHF * 2 = 10 CHF
-- [ ] Doller とFranc の重複
+- [x] Doller とFranc の重複
 - [x] equalsの一般化
 - [x] timesの一般化
 - [x] Franc と Doller を比較する
 - [x] 通貨の概念
-- [ ] FrancのテストとDollerのテストが重複しているけど削除する？
+- [x] FrancのテストとDollerのテストが重複しているけど削除する？
