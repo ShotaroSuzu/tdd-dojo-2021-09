@@ -1,6 +1,6 @@
 package tdd.dojo;
 
-public abstract class Money {
+public class Money {
 
 	protected int amount;
 	protected String currency;
@@ -12,9 +12,12 @@ public abstract class Money {
 	public boolean equals(Object object) {
 		Money money = (Money) object;
 		return this.amount == money.amount
-				&& getClass().equals(money.getClass());
+				&& currency().equals(money.currency());
 	}
-	abstract Money times(int i);
+
+	Money times(int multiplier) {
+		return new Money(amount * multiplier, currency);
+	};
 
 	public String currency() {
 		return currency;
@@ -26,5 +29,8 @@ public abstract class Money {
 	public static Money franc(int amount) {
 		return new Franc(amount, "CHF");
 	}
-
+	
+	public String toString() {
+		return amount + " " + currency;
+	}
 }
